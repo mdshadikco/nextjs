@@ -19,7 +19,7 @@ Install my-project with npm
 Clone the project
 
 ```bash
-  git clone https://github.com/mdshadikco/nextjs.git
+  git clone 
 ```
 
 Go to the project directory
