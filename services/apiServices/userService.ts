@@ -12,7 +12,7 @@ export const getUsers = ({
     });
 
 
-export const getUserById = (userId: string) =>
+export const getUserById = (userId: string | number) =>
   apicall({
     url: `https://jsonplaceholder.typicode.com/users/${userId}`,
     method: "GET",

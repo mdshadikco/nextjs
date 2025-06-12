@@ -1,9 +1,9 @@
 interface Props {
-    params: { slug?: string[] }
+    params: Promise<{ slug: string[] }>;
   }
   
-  export default function Shop({ params }: Props) {
-    const { slug } = params;
+  export default async function Shop({ params }: Props) {
+    const { slug } = await params;
     
     if (!slug) {
       return <div>Shop Home Page</div>;
